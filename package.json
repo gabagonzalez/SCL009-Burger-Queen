@@ -1,0 +1,19 @@
+{
+  "name": "scl009-burger-queen",
+  "version": "1.0.0",
+  "description": "Nos acaban de enviar un correo con una solicitud para un nuevo proyecto. Hay un\r restaurante que nos ha contactado porque quieren que alguien les construya una\r interfaz donde puedan tomar pedidos usando una tablet.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Relun/SCL009-Burger-Queen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Relun/SCL009-Burger-Queen/issues"
+  },
+  "homepage": "https://github.com/Relun/SCL009-Burger-Queen#readme"
+}

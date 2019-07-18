@@ -8,6 +8,16 @@ import { BreakfastComponent } from './components/breakfast/breakfast.component';
 import { WaiterComponent } from './components/waiter/waiter.component';
 import { KitchenComponent } from './components/kitchen/kitchen.component';
 
+import { FoodServiceService } from './services/food-service.service';
+
+export const appRoutes: Routes = [
+
+  { path: 'breakfast', component: BreakfastComponent },
+  { path: 'kitchen', component: KitchenComponent },
+  { path: 'waiter', component: WaiterComponent },
+  { path: '**', component: WaiterComponent },
+  { path: '', redirectTo: '/waiter', pathMatch:'full' } 
+];
 
 @NgModule({
   declarations: [
@@ -20,9 +30,14 @@ import { KitchenComponent } from './components/kitchen/kitchen.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: false } //esto es para debugear
+    )
   ],
-  providers: [],
+  providers: [
+    FoodServiceService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

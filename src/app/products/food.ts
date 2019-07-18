@@ -1,6 +1,6 @@
 import { Food } from './food-model';
 
-export const FOOD: Food = [
+export const FOOD: Food[] = [
 { id: 1.1, name: 'Cafe Americano' , price: 500},
 { id: 1.2, name: 'Cafe con Leche' , price: 700},
 { id: 1.3, name: 'Jugo Natural' , price: 700},

@@ -7,5 +7,5 @@ import { WaiterComponent } from './components/waiter/waiter.component'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'SCL009-Burger-Queen';
+  title = '';
 }

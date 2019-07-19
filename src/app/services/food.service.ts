@@ -4,12 +4,13 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class FoodServiceService {
+export class FoodService {
 
   constructor() {}
 
   getFood() {
     return "array de comida";
+
   }
   
 }

@@ -1,23 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BreakfastComponent } from './components/breakfast/breakfast.component';
+
+import { LandingComponent } from './landing/landing.component';
 import { WaiterComponent } from './components/waiter/waiter.component';
+import { BreakfastComponent } from './components/breakfast/breakfast.component';
 import { KitchenComponent } from './components/kitchen/kitchen.component';
+import { appRoutes } from './app.routes';
 
-import { FoodServiceService } from './services/food-service.service';
+import { FoodService } from './services/food.service';
 
-export const appRoutes: Routes = [
-
-  { path: 'breakfast', component: BreakfastComponent },
-  { path: 'kitchen', component: KitchenComponent },
-  { path: 'waiter', component: WaiterComponent },
-  { path: '**', component: WaiterComponent },
-  { path: '', redirectTo: '/waiter', pathMatch:'full' } 
-];
 
 @NgModule({
   declarations: [
@@ -25,6 +20,7 @@ export const appRoutes: Routes = [
     BreakfastComponent,
     WaiterComponent,
     KitchenComponent,
+    LandingComponent,
     
   ],
   imports: [
@@ -36,7 +32,7 @@ export const appRoutes: Routes = [
     )
   ],
   providers: [
-    FoodServiceService,
+    FoodService,
   ],
   bootstrap: [AppComponent]
 })

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { WaiterComponent } from './components/waiter/waiter.component'
+
 
 @Component({
   selector: 'app-root',

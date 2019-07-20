@@ -12,4 +12,8 @@ export class BreakfastComponent implements OnInit {
   ngOnInit() {
   }
 
+  // getMenu() {
+  
+  // }
+
 }

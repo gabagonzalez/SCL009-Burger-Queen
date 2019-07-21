@@ -8,9 +8,9 @@ export class FoodService {
 
   constructor() {}
 
-  getFood() {
-    return "array de comida";
+  // getFood() {
+  //   return "array de comida";
 
-  }
+  // }
   
 }

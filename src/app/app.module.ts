@@ -12,6 +12,7 @@ import { KitchenComponent } from './components/kitchen/kitchen.component';
 import { appRoutes } from './app.routes';
 
 import { FoodService } from './services/food.service';
+import { MenuComponent } from './components/menu/menu.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { FoodService } from './services/food.service';
     WaiterComponent,
     KitchenComponent,
     LandingComponent,
+    MenuComponent,
     
   ],
   imports: [

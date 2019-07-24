@@ -12,26 +12,9 @@
                     <h5 class="ml-2">PEDIDO</h5>
                     <!-- <input> -->
                     <div class="form-group">
-                        <button type="submit" class="btn btn-success mb-2 m-2">Café Americano
+                        <button *ngFor="let Food of FOOD" class="btn btn-success mb-2 m-2">{{Food.name}} <br> {{Food.price}}
                         </button>
                     </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-success mb-2 m-2">Café con Leche
-                        </button>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-success mb-2 m-2">Jugo Natural
-                        </button>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-success mb-2 m-2">Sandwich de Jamón y Queso
-                        </button>    
-                    </div>
-                    <div class="form-group">
-                        <button class="btn btn-warning" type="submit">
-                            <i class="fas fa-check-circle"></i> Agregar Pedido
-                        </button>
-                    </div>   
                     </form>
                 </div>
             </div>
@@ -78,4 +61,4 @@
             </div>
         </div>
     </div>
-<button *ngFor="let Food of FOOD">{{Food.name}}<br>{{Food.price}}</button>
+

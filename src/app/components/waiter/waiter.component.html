@@ -34,7 +34,7 @@
                   <tr *ngFor="let Food of selectedList">
                       <td>{{Food.name}}</td>
                       <td>{{Food.price}}</td>
-                      <a class="btn btn-danger text-while" (click)="onDelete(Food)">
+                      <a class="btn btn-danger text-while" (click)="onDelete(Food.id)">
                           <i class="fas fa-trash-alt"></i>
                       </a>
                   </tr>
@@ -61,12 +61,17 @@
 
           <p id="total">Total Pedido:${{sum}}</p>
           <div class="row">
-            <button class="btn btn-warning mb-2 m-2" type="submit">
+
+              <button class="btn btn-warning mb-2 m-2" routerLink="/landing" routerLinkActive="active">
+                <h5> Enviar a cocina</h5>
+              </button>
+
+            <!-- <button class="btn btn-warning mb-2 m-2" type="submit">
               <i class="fas fa-check-circle"></i> Enviar a Cocina
-            </button>
-            <button class="btn btn-danger mb-2 m-2" type="reset">
+            </button> -->
+            <!-- <button class="btn btn-danger mb-2 m-2" type="reset">
               <i class="fas fa-ban"></i> Cancelar
-            </button>
+            </button> -->
           </div>
       </div>
     </div>

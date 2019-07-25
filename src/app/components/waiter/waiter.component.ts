@@ -52,6 +52,18 @@ export class WaiterComponent implements OnInit {
   deletes(menu: Food): void {
     delete this.selectedList[1];
   }*/
+  /*
+  onDelete(id: string){
+    if(confirm('¿Seguro quiere eliminarlo?')){
+      this.selectedList.deleteProduct(id);
+      // this.toastr.success('Successfull Operation', 'Producto Eliminado');
+    }
+    
+}*/
+
+  // deleteProduct(menu: Food): void {
+  //   this.selectedList.remove(menu);
+  // }
 
   constructor( private foodService: FoodService ) { }
 //llamo para que traiga esta funcion desde el servicio

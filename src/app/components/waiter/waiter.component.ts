@@ -13,7 +13,8 @@ import { FOOD } from '../../products/food';
 })
 export class WaiterComponent implements OnInit {
   FOOD: Food[] = FOOD;
-  list: Food[];
+  list: Food[]; //lista vacía que se llenará con los e seleccionados
+  sum=0;
 
   filterMenu(menuType: string) {
     this.getFood();
@@ -32,19 +33,30 @@ export class WaiterComponent implements OnInit {
     this.filterMenu(menuType);
     // console.log(menuType);
   }
-
-  selectedList: Food;
-  
+  //selectedList: Food;
+  //onSelect(menu: Food): void {
+  //this.selectedList = menu;
+  //console.log(menu)
+  //}
+  selectedList: Food[] = [];
   onSelect(menu: Food): void {
-  this.selectedList = menu;
-  console.log(menu)
+  this.selectedList.push(menu);
+  //console.log(menu)
+
+  this.sum =0;
+  for(let i=0; i < this.selectedList.length; i++){
+    this.sum += this.selectedList[i].price;
   }
+  }
+  /*
+  deletes(menu: Food): void {
+    delete this.selectedList[1];
+  }*/
 
   constructor( private foodService: FoodService ) { }
-
+//llamo para que traiga esta funcion desde el servicio
   ngOnInit() {
     this.foodService.getFood();
-
   }
 
   // Call Observable with Subscribe

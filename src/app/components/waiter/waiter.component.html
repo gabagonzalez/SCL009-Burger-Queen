@@ -31,7 +31,20 @@
          <form>
           <h5 class="ml-2">RESUMEN</h5>
           <div class="form-group">
-            <!-- <ul>
+            
+             
+              <ul *ngFor="let Food of selectedList">
+               <li>{{Food.name}}<br>{{Food.price}}</li>
+              <a class="btn btn-secondary text-while">
+                <i class="fas fa-edit"></i>
+              </a>
+              <a class="btn btn-danger text-while" (click)="deletes(Food)">
+                <i class="fas fa-trash-alt"></i>                            
+              </a>
+            </ul> 
+
+            <!--
+             <ul>
               <ul *ngFor="let food of list">
               <li>{{food.id}}</li>
               <li>{{food.name}}</li>
@@ -42,10 +55,11 @@
               <a class="btn btn-danger text-while">
                 <i class="fas fa-trash-alt"></i>                            
               </a>
-            </ul> -->
+            </ul> 
+-->
           </div>
         </form>
-          <p id="total">Total Pedido:$</p>
+          <p id="total">Total Pedido:${{sum}}</p>
           <div class="row">
             <button class="btn btn-warning mb-2 m-2" type="submit">
               <i class="fas fa-check-circle"></i> Enviar a Cocina

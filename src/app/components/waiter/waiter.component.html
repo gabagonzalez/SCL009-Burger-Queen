@@ -15,7 +15,7 @@
           </div>  
           <div class="form-group">
             <button type="submit" class="btn btn-success mb-2 m-2" 
-              *ngFor="let Food of list" (click)="onSelect(Food)">
+              *ngFor="let Food of list" value="{{Food.id}}" (click)="onSelect(Food.id)">
               {{Food.name}}<br>{{Food.price}}
             </button>
           </div>
@@ -31,8 +31,6 @@
          <form>
           <h5 class="ml-2">RESUMEN</h5>
           <div class="form-group">
-            
-             
               <ul *ngFor="let Food of selectedList">
                <li>{{Food.name}}<br>{{Food.price}}</li>
               <a class="btn btn-secondary text-while">
@@ -51,7 +49,7 @@
               <li>{{food.price}}</li>
               <a class="btn btn-secondary text-while">
                 <i class="fas fa-edit"></i>
-              </a>
+              </a> 
               <a class="btn btn-danger text-while">
                 <i class="fas fa-trash-alt"></i>                            
               </a>
@@ -67,6 +65,11 @@
             <button class="btn btn-danger mb-2 m-2" type="reset">
               <i class="fas fa-ban"></i> Cancelar
             </button>
+            <!-- <div>
+              <ul>
+                <li>{{Food.name}}{{Food.price}}<button (click)="onDeleteOne(Food.id)">X</button></li>
+              </ul>
+            </div> -->
           </div>
       </div>
     </div>

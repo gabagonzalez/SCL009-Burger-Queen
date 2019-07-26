@@ -6,6 +6,7 @@ import { Food } from '../../products/food-model';
 // Json-Data
 import { FOOD } from '../../products/food';
 
+<<<<<<< HEAD
 @Component({
   selector: 'app-waiter',
   templateUrl: './waiter.component.html',
@@ -74,3 +75,5 @@ export class WaiterComponent implements OnInit {
   }
 
 }
+=======
+>>>>>>> f47e35e798ca9f5f0d0b5b3c1a3423847966b63d

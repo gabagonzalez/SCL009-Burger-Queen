@@ -67,10 +67,12 @@ export class WaiterComponent implements OnInit {
     this.foodService.getFood();
   }
 
+
   // Call Observable with Subscribe
   getFood(): void {
     this.foodService.getFood()
         .subscribe(foods => this.list = foods);
   }
+
 
 }

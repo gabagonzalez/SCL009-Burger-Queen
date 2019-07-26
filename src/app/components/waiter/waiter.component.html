@@ -4,7 +4,11 @@
     <div class="card mt-5">
       <div class="card-body">
         <!-- <form> -->
-          <h5 class="ml-2">INICIA TU PEDIDO</h5>
+
+          <h5 class="ml-2">INICIA TU PEDIDO {{clientName}}</h5>
+          <label for="clientName">Nombre cliente:
+              <input [(ngModel)]="clientName" placeholder="Nombre Cliente" type="text" />
+            </label> 
           <div class="form-group">
             <button class="btn btn-warning mb-2 m-2" (click)="filterBreakfast('breakfast')">
               <i class="fas fa-check-circle"></i> DESAYUNO

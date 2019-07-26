@@ -11,6 +11,7 @@ import { KitchenComponent } from './components/kitchen/kitchen.component';
 import { appRoutes } from './app.routes';
 // Services
 import { FoodService } from './services/food.service';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { FoodService } from './services/food.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: false } //esto es para debugear

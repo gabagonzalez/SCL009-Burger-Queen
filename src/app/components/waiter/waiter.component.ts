@@ -6,6 +6,7 @@ import { Food } from '../../products/food-model';
 // Json-Data
 import { FOOD } from '../../products/food';
 
+
 @Component({
   selector: 'app-waiter',
   templateUrl: './waiter.component.html',

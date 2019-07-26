@@ -48,11 +48,17 @@ export class WaiterComponent implements OnInit {
     this.sum += this.selectedList[i].price;
   }
   }
-  /*
-  deletes(menu: Food): void {
-    delete this.selectedList[1];
-  }*/
 
+  onDelete(menu: Food): void {
+    let item = this.selectedList.indexOf(menu);
+    this.selectedList.splice(item,1);
+    //console.log(this.selectedList);
+    this.sum =0;
+    for(let i=0; i < this.selectedList.length; i++){
+      this.sum += this.selectedList[i].price;
+  }
+  }
+ 
   constructor( private foodService: FoodService ) { }
 //llamo para que traiga esta funcion desde el servicio
   ngOnInit() {

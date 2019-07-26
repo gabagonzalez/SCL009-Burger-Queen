@@ -28,9 +28,24 @@
     </div>
     <div class="card mt-5">
       <div class="card-body">
+
+          <table class="table table-sm table-hover">
+              <tbody>
+                  <tr *ngFor="let Food of selectedList">
+                      <td>{{Food.name}}</td>
+                      <td>{{Food.price}}</td>
+                      <a class="btn btn-danger text-while" (click)="onDelete(Food.id)">
+                          <i class="fas fa-trash-alt"></i>
+                      </a>
+                  </tr>
+              </tbody>
+          </table>
+
+<!-- 
          <form>
           <h5 class="ml-2">RESUMEN</h5>
           <div class="form-group">
+
               <ul *ngFor="let Food of selectedList">
                <li>{{Food.name}}<br>{{Food.price}}</li>
               <a class="btn btn-secondary text-while">
@@ -41,35 +56,23 @@
               </a>
             </ul> 
 
-            <!--
-             <ul>
-              <ul *ngFor="let food of list">
-              <li>{{food.id}}</li>
-              <li>{{food.name}}</li>
-              <li>{{food.price}}</li>
-              <a class="btn btn-secondary text-while">
-                <i class="fas fa-edit"></i>
-              </a> 
-              <a class="btn btn-danger text-while">
-                <i class="fas fa-trash-alt"></i>                            
-              </a>
-            </ul> 
--->
+
           </div>
-        </form>
+        </form> -->
+
           <p id="total">Total Pedido:${{sum}}</p>
           <div class="row">
-            <button class="btn btn-warning mb-2 m-2" type="submit">
+
+              <button class="btn btn-warning mb-2 m-2" routerLink="/landing" routerLinkActive="active">
+                <h5> Enviar a cocina</h5>
+              </button>
+
+            <!-- <button class="btn btn-warning mb-2 m-2" type="submit">
               <i class="fas fa-check-circle"></i> Enviar a Cocina
-            </button>
-            <button class="btn btn-danger mb-2 m-2" type="reset">
+            </button> -->
+            <!-- <button class="btn btn-danger mb-2 m-2" type="reset">
               <i class="fas fa-ban"></i> Cancelar
-            </button>
-            <!-- <div>
-              <ul>
-                <li>{{Food.name}}{{Food.price}}<button (click)="onDeleteOne(Food.id)">X</button></li>
-              </ul>
-            </div> -->
+         </button> -->
           </div>
       </div>
     </div>

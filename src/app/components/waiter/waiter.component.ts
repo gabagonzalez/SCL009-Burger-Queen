@@ -13,7 +13,9 @@ import { FOOD } from '../../products/food';
 })
 export class WaiterComponent implements OnInit {
   FOOD: Food[] = FOOD;
+
   list: Food[]; //lista vacía que se llenará con los e seleccionados
+  
   sum=0;
 
   filterMenu(menuType: string) {
@@ -60,7 +62,7 @@ export class WaiterComponent implements OnInit {
   }
  
   constructor( private foodService: FoodService ) { }
-//llamo para que traiga esta funcion desde el servicio
+//Call function desde el servicio
   ngOnInit() {
     this.foodService.getFood();
   }

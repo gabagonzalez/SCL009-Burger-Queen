@@ -1,39 +1,31 @@
 ![Home Burger Queen](img/home-Burger-queen.png)
-
 # Burger Queen
-
 <br>
 
 ## Indice
+
 * Presentación del producto
 * Funcionalidad
 * Proceso de diseño
 * Tecnologías usadas
-
 <br>
-
 ## Presentación
 
 Burger Queen fue creado pensando en facilitar la labor del mesero a la hora de tomar el pedido de algún comensal, con ello, agilizar el proceso entre el momento en que se realiza el pedido y la llegada de este a la mesa, por lo que además, ofrecemos una experiencia agradable al cliente.
-Otra de las ventajas de usar esta interfaz, tiene que ver con la conexión a Internet, ya que puede funcionar de manera online y offline, lo que hace que ante una posible perdida de conexión, todo siga funcionando, lo que garantiza el servicio y evita perdidas en las ventas.
 Burger Queen está originalmente diseñado para tablets, sin embargo se puede visualizar perfectamente desde cualquier dispositivo.
-
 <br>
-
 ## Funcionalidad
 
 La interfaz presenta dos botones principales, "Mesero" y "Cocina".
-Al dirigirnos a "Mesero" Nos encontramos con la opción "desayuno" y "menú del día", cada una de estas opciones nos mostrará una lista con el menú correspondiente; al clickear cada una, se imprimirá en la pantalla la lista de pedidos con sus respectivos precios. Esto mismo, más el nombre del cliente, será enviado a la cocina por medio de un botón, para que quién esté encargado de preparar los pedidos, tenga conocimiento inmediato de lo que se está solicitando. De esta manera se agilizan los procesos, desde que el mesero toma el pedido hasta que llega a la cocina y se sirve al cliente.
-
+Al dirigirnos a "Mesero", nos encontramos con la opción "desayuno" y "menú del día", cada una de estas opciones nos mostrará una lista con el menú correspondiente; al clickear cada una, se imprimirá en la pantalla la lista de pedidos con sus respectivos precios. Esto mismo, más el nombre del cliente, será enviado a la cocina por medio de un botón, para que quién esté encargado de preparar los pedidos, tenga conocimiento inmediato de lo que se está solicitando. De esta manera se agilizan los procesos, desde que el mesero toma el pedido hasta que llega a la cocina y se sirve al cliente.
 <br>
-
 ## Proceso de diseño
 
 Partimos diseñando un flujo que fuese con el que pudiésemos identificar una solución optima para la problemática que queríamos abordar.
+
 ### Flujo
 
 ![flujo](img/flujo-app.jpg)
-
 
 Y para visualizar mejor lo que queríamos finalmente plasmar en pantalla, realizamos los skecth, o prototipos de baja fidelidad, que se muestran a continuación.
 
@@ -54,10 +46,9 @@ Y para visualizar mejor lo que queríamos finalmente plasmar en pantalla, realiz
 * **HTML5**.
 * **CSS** en compañía de **Bootstrap** y **Fontawsome** para los iconos dentro de botones y otros estilos.
 * Base de datos **Cloud Firestore** de **Firebase**, para lo cual utilizamos además la librería de node **Angularfire2**.
-
 <br>
-
 ## Equipo
+
 * Claudia Araya
 * Gabriela Gonzalez
 * Agatha Sáez

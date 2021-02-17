@@ -52,6 +52,4 @@ Y para visualizar mejor lo que queríamos finalmente plasmar en pantalla, realiz
 
 ## Equipo
 
-* Claudia Araya
 * Gaba González
-* Agatha Sáez

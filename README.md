@@ -1,4 +1,4 @@
-![Home Burger Queen](img/home-Burger-queen.png)
+![Home Burger Queen](src/img/home-Burger-queen.png)
 # Burger Queen
 <br>
 
@@ -9,6 +9,7 @@
 * Proceso de diseño
 * Tecnologías usadas
 <br>
+
 ## Presentación
 
 Burger Queen fue creado pensando en facilitar la labor del mesero a la hora de tomar el pedido de algún comensal, con ello, agilizar el proceso entre el momento en que se realiza el pedido y la llegada de este a la mesa, por lo que además, ofrecemos una experiencia agradable al cliente.
@@ -21,22 +22,23 @@ Al dirigirnos a "Mesero", nos encontramos con la opción "desayuno" y "menú del
 <br>
 ## Proceso de diseño
 
-Partimos diseñando un flujo que fuese con el que pudiésemos identificar una solución optima para la problemática que queríamos abordar.
+Partimos diseñando un flujo que fuese con el que pudiésemos identificar una solución óptima para la problemática que queríamos abordar.
 
 ### Flujo
 
-![flujo](img/flujo-app.jpg)
+![flujo](src/img/flujo-app.jpg)
 
-Y para visualizar mejor lo que queríamos finalmente plasmar en pantalla, realizamos los skecth, o prototipos de baja fidelidad, que se muestran a continuación.
+Y para visualizar mejor lo que queríamos finalmente plasmar en pantalla, realizamos los skecth o prototipos de baja fidelidad, que se muestran a continuación.
 
 ### Sketch
 
-![landing](img/sketch-landing.jpg)
-![pantalla de pedido](img/sketch-pantalla-pedido.jpg)
+![landing](src/img/sketch-landing.jpg)
+
+![pantalla de pedido](src/img/sketch-pantalla-pedido.jpg)
 
 ### Lo qué se puede ver en estos momentos en la plataforma
 
-![vista desde "mesero"](img/vista-mesero.png)
+![vista desde "mesero"](src/img/vista-mesero.png)
 
 <br>
 
@@ -44,11 +46,12 @@ Y para visualizar mejor lo que queríamos finalmente plasmar en pantalla, realiz
 
 * Este proyecto está hecho en **Angular 8**, que por defecto utiliza el lenguaje **TypeScript**.
 * **HTML5**.
-* **CSS** en compañía de **Bootstrap** y **Fontawsome** para los iconos dentro de botones y otros estilos.
+* **CSS** en compañía de **Bootstrap** y **Fontawsome** para los iconos dentro de los botones y otros estilos.
 * Base de datos **Cloud Firestore** de **Firebase**, para lo cual utilizamos además la librería de node **Angularfire2**.
 <br>
+
 ## Equipo
 
 * Claudia Araya
-* Gabriela Gonzalez
+* Gaba González
 * Agatha Sáez

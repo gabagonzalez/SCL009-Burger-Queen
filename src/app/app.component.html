@@ -1,24 +1,10 @@
-<!--First Option -->
-<header>
-  <nav class="navbar navbar-dark bg-warning">
-    <div style="text-align:right">
-      <img style="float:left" width="70" alt="Burger Logo" src="https://i.ibb.co/6Xt3x4K/BURGUER-QUEEN3-PNG.png">
-      <a href="/landing" class="navbar-brand">
-        <h1>Burger Queen</h1>
-      </a>
-    </div>
-    <div class="form-group">
-      <button class="btn btn-danger mt-3 m-2" routerLink="/waiter" routerLinkActive="active">
-        <h5> Mesero</h5>
-      </button>
-      <button class="btn btn-danger mt-3 m-2" routerLink="/kitchen" routerLinkActive="active">
-        <h5> Cocina</h5>
-      </button>
-      <button class="btn btn-danger mt-3 m-2" routerLink="/landing" routerLinkActive="active">
-        <h5> Home</h5>
-      </button>
-    </div>    
-  </nav>
-</header>
+<nav>
+  <a routerLink="/landing" routerLinkActive="active">Home</a>
+</nav>
+
+<div style="text-align:center">
+  <img width="300" alt="logo Burger Queen" src="https://i.ibb.co/6Xt3x4K/BURGUER-QUEEN3-PNG.png">
+</div>
+
 
 <router-outlet></router-outlet>

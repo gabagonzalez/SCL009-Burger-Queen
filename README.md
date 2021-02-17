@@ -1,4 +1,4 @@
-![Home Burger Queen](src/img/home-Burger-queen.png)
+![Home Burger Queen](img/home-Burger-queen.png)
 # Burger Queen
 <br>
 
@@ -26,19 +26,19 @@ Partimos diseñando un flujo que fuese con el que pudiésemos identificar una so
 
 ### Flujo
 
-![flujo](src/img/flujo-app.jpg)
+![flujo](img/flujo-app.jpg)
 
 Y para visualizar mejor lo que queríamos finalmente plasmar en pantalla, realizamos los skecth o prototipos de baja fidelidad, que se muestran a continuación.
 
 ### Sketch
 
-![landing](src/img/sketch-landing.jpg)
+![landing](img/sketch-landing.jpg)
 
-![pantalla de pedido](src/img/sketch-pantalla-pedido.jpg)
+![pantalla de pedido](img/sketch-pantalla-pedido.jpg)
 
 ### Lo qué se puede ver en estos momentos en la plataforma
 
-![vista desde "mesero"](src/img/vista-mesero.png)
+![vista desde "mesero"](img/vista-mesero.png)
 
 <br>
 
@@ -53,5 +53,5 @@ Y para visualizar mejor lo que queríamos finalmente plasmar en pantalla, realiz
 ## Equipo
 
 * Claudia Araya
-* Gaba González
+* Gabriela González
 * Agatha Sáez

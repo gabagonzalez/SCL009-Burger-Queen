@@ -50,6 +50,6 @@ Y para visualizar mejor lo que queríamos finalmente plasmar en pantalla, realiz
 * Base de datos **Cloud Firestore** de **Firebase**, para lo cual utilizamos además la librería de node **Angularfire2**.
 <br>
 
-## Equipo
+
 
 * Gaba González
